@@ -1,6 +1,7 @@
 import React from "react";
-import Home from "./Home";
 import { Link, Outlet} from "react-router-dom"
+import '../styles.css';
+
 
 const App = () => {
     return (
@@ -11,9 +12,6 @@ const App = () => {
             <Link to="/contact">Contact Us!</Link>
           </nav>
           <Outlet />
-          <div>
-            <Home />
-          </div>
         </div>
     );
 }
